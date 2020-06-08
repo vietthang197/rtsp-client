@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show webcam</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsmpeg/0.2/jsmpg.min.js"></script>
+<script type="text/javascript">
+    player = new JSMpeg.Player('ws://localhost:9999', {
+        canvas: document.getElementById('canvas')
+    })
+</script>
+</html>
